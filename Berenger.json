@@ -1,13 +1,14 @@
 {
-	"source": "Ellison",
+	"monster": [
+	{
 	"name": "Ellison Berenger, Bandit Captain",
 	"size": "M",
-	"type": {
-		"type": "humanoid",
+	"type": "humanoid",
 		"tags": [
 			"human"
 		]
 	},
+	"source": "Ellison",
 	"alignment": "neutral",
 	"ac": "15 (studded leather)",
 	"hp": "65 (10d8+20)",
@@ -68,3 +69,5 @@
 	"legendary": [],
 	"page": 0
 },
+	]
+}
