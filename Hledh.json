@@ -61,10 +61,14 @@
 				{
 					"name": "Legendary Resistance (1/Day)",
 					"entries": [
-						"If Hledh fails a saving throw, she can choose to succeed instead.",
-						"Innate Spellcasting Hledh can innately cast the following spells, requiring no material components.",
-						"1/day: darkness"
+						"If Hledh fails a saving throw, she can choose to succeed instead."
 					]
+				},
+				{"name": "Innate Spellcasting",
+				 "entries": [
+				 		"Hledh can innately cast the following spells, requiring no material components.",
+						"1/day: darkness"
+					 	]
 				}
 			],
 			"action": [
@@ -77,8 +81,13 @@
 				{
 					"name": "Greatsword",
 					"entries": [
-						"Melee Weapon Attack: {@hit 12} to hit, reach 10 ft., one target. Hit: 28 ({@dice 6d6+7}) slashing damage.",
-						"Rock Ranged Weapon Attack: {@hit 12} to hit, range 60/240 ft., one target. Hit: 29 ({@dice 4d10+7}) bludgeoning damage."
+						"Melee Weapon Attack: {@hit 12} to hit, reach 10 ft., one target. Hit: 28 ({@dice 6d6+7}) slashing damage."
+					]
+				},
+				{
+					"name": "Rock",
+					"entries": [
+					"Ranged Weapon Attack: {@hit 12} to hit, range 60/240 ft., one target. Hit: 29 ({@dice 4d10+7}) bludgeoning damage."
 					]
 				}
 			],
