@@ -2,7 +2,7 @@
 	"monster": [
 		{
 			"source": "DDEX3-16",
-			"page": 62,
+			"page": 65,
 			"name": "Hledh Hellspawn",
 			"size": "H",
 			"type": {
@@ -61,14 +61,8 @@
 				{
 					"name": "Legendary Resistance (1/Day)",
 					"entries": [
-						"If Hledh fails a saving throw, she can choose to succeed instead."
+						"If Hledh fails a saving throw she can choose to succeed instead."
 					]
-				},
-				{"name": "Innate Spellcasting",
-				 "entries": [
-				 		"Hledh can innately cast the following spells, requiring no material components.",
-						"1/day: darkness"
-					 	]
 				}
 			],
 			"action": [
@@ -87,11 +81,22 @@
 				{
 					"name": "Rock",
 					"entries": [
-					"Ranged Weapon Attack: {@hit 12} to hit, range 60/240 ft., one target. Hit: 29 ({@dice 4d10+7}) bludgeoning damage."
+						"Ranged Weapon Attack: {@hit 12} to hit, range 60/240 ft., one target. Hit: 29 ({@dice 4d10+7}) bludgeoning damage."
 					]
 				}
 			],
 			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"Hledh can innately cast the following spells requiring no material components."
+					],
+					"daily": {
+						"1": [
+							"{@spell darkness}"
+						]
+					}
+				},
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
