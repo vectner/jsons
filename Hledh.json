@@ -1,8 +1,8 @@
 {
 	"monster": [
 		{
-			"source": "DDEX3016",
-			"page": 65,
+			"source": "DDEX3-16",
+			"page": 62,
 			"name": "Hledh Hellspawn",
 			"size": "H",
 			"type": {
@@ -61,20 +61,9 @@
 				{
 					"name": "Legendary Resistance (1/Day)",
 					"entries": [
-						"If Hledh fails a saving throw,",
-						"she can choose to succeed instead.",
-						"Innate Spellcasting Hledh can innately cast the following spells,",
-						"requiring no material components.",
+						"If Hledh fails a saving throw, she can choose to succeed instead.",
+						"Innate Spellcasting Hledh can innately cast the following spells, requiring no material components.",
 						"1/day: darkness"
-					]
-				},
-				{
-					"name": "Wisdom (save DC 14, +6 to hit with spell attacks)",
-					"entries": [
-						"Hledh has the",
-						"following cleric spells prepared:",
-						"Cantrips (at will): guidance, spare the dying, thaumaturgy",
-						"1st level (3 slots): bane, guiding bolt, healing word, shield of faith"
 					]
 				}
 			],
@@ -88,20 +77,8 @@
 				{
 					"name": "Greatsword",
 					"entries": [
-						"Melee Weapon Attack: {@hit 12} to hit, reach 10 ft., one"
-					]
-				},
-				{
-					"name": "target",
-					"entries": [
-						"Hit: 28 ({@dice 6d6+7}) slashing damage.",
-						"Rock Ranged Weapon Attack: {@hit 12} to hit, range 60/240 ft., one"
-					]
-				},
-				{
-					"name": "target",
-					"entries": [
-						"Hit: 29 ({@dice 4d10+7}) bludgeoning damage."
+						"Melee Weapon Attack: {@hit 12} to hit, reach 10 ft., one target. Hit: 28 ({@dice 6d6+7}) slashing damage.",
+						"Rock Ranged Weapon Attack: {@hit 12} to hit, range 60/240 ft., one target. Hit: 29 ({@dice 4d10+7}) bludgeoning damage."
 					]
 				}
 			],
@@ -109,8 +86,27 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"Hledh is a 2nd-level spellcaster. Her spellcasting ability is"
-					]
+						"Hledh is a 2nd-level spellcaster. Her spellcasting ability is Wisdom (save DC 14, {@hit 6} to hit with spell attacks). Hledh has the following cleric spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell guidance}",
+								"{@spell spare the dying}",
+								"{@spell thaumaturgy}"
+							]
+						},
+						"1": {
+							"slots": 3,
+							"spells": [
+								"{@spell bane}",
+								"{@spell guiding bolt}",
+								"{@spell healing word}",
+								"{@spell shield of faith}"
+							]
+						}
+					},
+					"ability": "wis"
 				}
 			]
 		}
