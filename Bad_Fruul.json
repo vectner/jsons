@@ -1,0 +1,106 @@
+{
+	"monster": [
+		{
+			"source": "DDAL05-16",
+			"page": 0,
+			"name": "Bad Fruul (Hill Giant)",
+			"size": "H",
+			"type": "giant",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item half plate armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 105,
+				"formula": "10d12 + 40"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 21,
+			"dex": 8,
+			"con": 19,
+			"int": 19,
+			"wis": 9,
+			"cha": 6,
+			"skill": {
+				"perception": "+2"
+			},
+			"passive": 12,
+			"languages": "Giant",
+			"cr": "6",
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The giant makes two maul attacks or",
+						"makes a maul attack and casts a cantrip."
+					]
+				},
+				{
+					"name": "Maul",
+					"entries": [
+						"Melee Weapon Attack: {@hit 8} to hit, reach 10 ft.,"
+					]
+				},
+				{
+					"name": "one target",
+					"entries": [
+						"Hit: 21 ({@damage 3d10    +    5}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Rock",
+					"entries": [
+						"Ranged Weapon Attack: {@hit 8} to hit, range 60/240",
+						"ft., one target. Hit: 21 ({@damage 3d10    +    5}) bludgeoning damage."
+					]
+				}
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Bad Fruul is a 4th-level spellcaster. Fruul's",
+						"spellcasting ability is Intelligence (spell save DC 14, +4",
+						"to hit with spell attacks). He has the following wizard",
+						"spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell fire bolt}",
+								"{@spell shocking grasp}",
+								"{@spell true strike}"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell burning hands}",
+								"{@spell shield}",
+								"{@spell magic missile}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell hold person}",
+								"{@spell misty step}"
+							]
+						}
+					},
+					"ability": "int"
+				}
+			]
+		}
+	]
+}
